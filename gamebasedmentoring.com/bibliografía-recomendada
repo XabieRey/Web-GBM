@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>Game-based mentoring</title>
+        <link rel="stylesheet" href=".\styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="top-block">
+          <h1>Game-based mentoring</h1>
+          <div class="navigation-bar">
+            <button type="button" onclick="alert('Quiénes somos')"><h2><a href="gamebasedmentoring.com/quienes-somos">Quiénes somos</a></h2></button>         
+            <button type="button" onclick="alert('Qué ofrecemos')"><h2><a href="gamebasedmentoring.com/que-ofrecemos">Qué ofrecemos</a></h2></button>         
+            <button type="button" onclick="alert('En qué nos basamos')"><h2><a href="gamebasedmentoring.com/en-que-nos-basamos">En qué nos basamos</a></h2></button>
+            <button type="button" onclick="alert('Contacto')"><h2><a href="gamebasedmentoring.com/contacto">Contacto</a></h2></button>
+            <button type="button" onclick="alert('Bibliografía recomendada')"><h2><a href="gamebasedmentoring.com/bibliografía-recomendada">Bibliografía recomendada</a></h2></button>
+          </div>
+        </header>
+        <h3>Bibliografía recomendada</h3>
+        <footer>
+
+        </footer>
+    </body>
+</html>
