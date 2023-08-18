@@ -52,8 +52,7 @@
     
     footer {
         border-top-color: var(--color1);
-        border-top: 2px;
-        border-top: solid;
+        border-top: solid 2px;
         min-width: 98%;
         height: 4%;
         position: absolute;
@@ -63,16 +62,20 @@
     .navigation-bar {
         padding: 0px 18px;
         display: flex;
-        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
     }
     
-    
-    .navigation {
+    .nav-link {
         border-radius: 6%;
         width: fit-content;
         background-color: var(--color2);
         padding: 0px 8px;
         margin: 2px;
+    }
+
+    li {
+        list-style: none;
     }
     
     .home {
@@ -80,15 +83,13 @@
         background-color: whitesmoke;
     }
     
-    a:link {
-        color: whitesmoke;
-        background-color: transparent;
+    a:link, .nav-link {
+        color: var(--bgcolor);
         text-decoration: none;
       }
     
     a:visited {
-        color: var(--color3);
-        background-color: transparent;
+        color: var(--bgcolor);
         text-decoration: none;
       }
     
@@ -103,15 +104,16 @@
         margin-top: 100px;
         position: absolute;
         height: 88%;
-        align-items: center;
+        place-items: center;
+        width: 100%;
     }
     
-    .bg-image {
+    #bg-image {
         display: block;
         position: absolute;
-        width: 100%;
         opacity: 0.10;
         z-index: -1;
+        object-fit: cover;
     }
     
     .video {
@@ -121,8 +123,7 @@
     
     .bio {
         display: flex;
-        align-items: center;
-        justify-content: center
+        place-items: center;
     }
     
     .bio-image {
@@ -130,6 +131,10 @@
         width: 250px;
         height: 250px;
         margin: 20px;
+    }
+
+    form {
+        display: flex;
     }
 }
 
@@ -149,7 +154,7 @@ h2 {
     font-size: small;
 }
 
-.bg-image {
+#bg-image {
     display: block;
     position: absolute;
     width: 100%;
